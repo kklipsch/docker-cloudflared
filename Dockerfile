@@ -1,7 +1,8 @@
 FROM resin/armv7hf-debian-qemu as build
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV TUNNEL_METRICS localhost:4000
+ENV TUNNEL_METRICS 0.0.0.0:4000
+ENV TUNNEL_DNS_ADDRESS 0.0.0.0
 
 EXPOSE 53/tcp
 EXPOSE 53/udp
