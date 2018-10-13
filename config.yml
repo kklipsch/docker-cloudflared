@@ -1,0 +1,5 @@
+metrics: localhost:4000
+proxy-dns: true
+proxy-dns-upstream:
+  - https://1.1.1.1/dns-query
+  - https://1.0.0.1/dns-query
